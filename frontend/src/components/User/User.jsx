@@ -15,6 +15,9 @@ function User({ user }) {
         <span className="label">Country: </span>
         {user.country}
       </p>
+
+      <button>Edit</button>
+      <button>Delete</button>
     </div>
   );
 }

@@ -14,7 +14,7 @@ function Form() {
       <label htmlFor="name">Lastname</label>
       <input type="text" id="name" />
 
-      <label htmlFor="name">City</label>
+      <label htmlFor="name">Country</label>
       <input type="text" id="name" />
 
       <button>Submit form</button>

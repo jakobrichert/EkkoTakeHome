@@ -6,9 +6,8 @@
 
 .user span.label {
   font-weight: 444;
-  color: #333;
+  color: #000;
 }
 .user p {
-  font-weight: 700;
-  color: #000;
+  color: #333;
 }
