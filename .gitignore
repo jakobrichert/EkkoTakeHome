@@ -1,0 +1,26 @@
+# Deployment wrapper
+.env
+node_modules/
+
+# Generel
+.env
+api/.env
+.DS_Store
+.vscode
+.vs
+.idea
+api/.idea
+api/.DS_Store
+app/.DS_Store
+api/.env
+api/node_modules
+app/.idea
+app/node_modules
+app/build
+app/.env.local
+app/.env.development.local
+app/.env.test.local
+app/.env.production.local
+app/npm-debug.log*
+app/yarn-debug.log*
+app/yarn-error.log*
