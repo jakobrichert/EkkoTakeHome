@@ -1,0 +1,21 @@
+.form {
+  padding: 0.5rem;
+  border: 1px #ccc solid;
+  margin: 2rem 0;
+}
+
+.form input,
+.form label,
+.form button {
+  display: block;
+}
+
+.form label {
+  margin-bottom: 0.35rem;
+}
+.form input {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.35rem;
+  border: 1px #ccc solid;
+}

@@ -1,0 +1,14 @@
+.user {
+  padding: 0.5rem;
+  border: 1px #ccc solid;
+  margin: 0.5rem 0;
+}
+
+.user span.label {
+  font-weight: 444;
+  color: #333;
+}
+.user p {
+  font-weight: 700;
+  color: #000;
+}
