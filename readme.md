@@ -25,11 +25,11 @@ If you feel like something is off or isn't working as intended then reach out to
 
 You can either upload the project to a github repo of your own (or something similar) and send us a link to it or you can zip your project and send it to us (remember not to include node_modules though!).
 
-We will talk about the project in the next interview so you have a chance to tell us about your thoughts and ideas with your particular solution.
+We will talk about your solution in the next interview so you have a chance to tell us about your thoughts and ideas and why you have done it the way you have.
 
 # The tasks
 
-We have created a bit of functionality so you have something to work from. It is now your tasks to add the following functionality. You will need to add new apis and integrate with the react app:
+We have created a bit of functionality so you have something to work from. It is now your tasks to add the following functionality. You will need to add new apis and integrate them with the react app:
 
 - [ ] The database comes with a list of users. Replace the dummy users in app.jsx with the actual users from the database
 
