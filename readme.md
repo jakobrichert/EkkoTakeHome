@@ -29,15 +29,17 @@ We will talk about your solution in the next interview so you have a chance to t
 
 # The tasks
 
-We have created a bit of functionality so you have something to work from. It is now your tasks to add the following functionality. You will need to add new apis and integrate them with the react app:
+We have created a bit of functionality so you have something to work from. It is now up to you to add the following functionality. You will need to add new apis and integrate them with the react app:
 
 - [ ] The database comes with a list of users. Replace the dummy users in app.jsx with the actual users from the database
 
 - [ ] Make the form work, so users can be added with the form
 
-- [ ] Make edit work the individual users (you can use the same form in the top to edit the users if you want)
+- [ ] Make edit work for individual users (you can use the same form in the top to edit the users if you want)
 
 - [ ] Make delete work
+
+- [ ] When adding a new user, make sure the list updates
 
 ## 💡 Ideas for additional tasks
 
@@ -50,3 +52,4 @@ We have created a bit of functionality so you have something to work from. It is
 - Implement redux
 - Organize the api
 - Organize the app
+- Handle loading and error states (you can use some artificial delays in the api or use network throttling in chrome)
