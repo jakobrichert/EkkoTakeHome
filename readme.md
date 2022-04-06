@@ -19,11 +19,11 @@ If you feel like something is off or isn't working as intended then reach out to
 5. After installation completes run `npm run dev` or `npm start`  
    (`npm run dev` will run nodemon which automatically restarts the server everytime you make changes)
 6. Verify that the server is started by opening `http://localhost:4000/`. You should see "Hello world" in the browser
-7. For database we are using SQLite here. You can see some examples for how to use the driver we included here: `https://github.com/kriasoft/node-sqlite#examples`
+7. For database we are using SQLite here. You can see some examples for how to use the driver we included here: https://github.com/kriasoft/node-sqlite#examples
 
 # The tasks
 
-We have created a bit of functionality so you have something to work from. It is now up to you to add the following functionality. You will need to add new apis and integrate them with the react app. For styling you are free to alter the markup, change the classes etc. We have not included any css-libraries to keep the project simple, but if you feel much more at home with scss, sass, styled components or similar and feel like you can add them without spending too much time on it you're welcome to. You can find the mockups under `resources/`
+We have created a bit of functionality so you have something to work from. It is now up to you to add the following functionality. You will need to add new apis and integrate them with the react app. For styling you are free to alter the markup, change the classes etc. We have not included any css-libraries to keep the project simple, but if you feel much more at home with scss, sass, styled components or similar and feel like you can add them without spending too much time on it you're welcome to. You can find the mockups under `resources/`. The font used in the mockup are 'Roboto' which can be found here https://fonts.google.com/specimen/Roboto
 
 - [ ] The database comes with a list of users. Replace the dummy users in app.jsx with the actual users from the database
 
