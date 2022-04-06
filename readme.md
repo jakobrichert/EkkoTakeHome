@@ -5,7 +5,7 @@ This repository holds all the required information for completing the take home 
 ## ⏰ We expect you to use between 2-4 hours on the test
 
 If you complete all the tasks within that timerange you can add any feature you want. You can look through the list of ideas for inspiration but you can do whatever you want to.  
-If you do not complete all the tasks within the 4 hours that is also fine. Maybe your code is just very clean, consice and organised or maybe some unpredictable problem took a long time and that is fine - we know how it can be 😀
+If you do not complete all the tasks within the 4 hours that is also fine. Maybe your code is just very clean, concice and organised or maybe some unpredictable problem took a long time and that is fine - we know how it can be 😀
 
 ## 🛫 Getting started
 
