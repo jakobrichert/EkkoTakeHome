@@ -39,53 +39,49 @@ app.listen(PORT, (err) => {
 
 app.post("/users", async (req,res)=> {
   console.log(req.body);
+  const name = req.body.firstname
+  const lastname = req.body.lastname
+  const country = req.body.country
+  const db = await database();
+  const result = await db.all('INSERT INTO users(firstname,lastname,country) VALUES(?,?,?)',
+  [name,lastname,country]);
+  return res.json(result);
+});
+
+app.delete("/users/delete", async (req,res)=> {
+  console.log(req.body);
+  const id = req.body.id
+  
+  const db = await database();
+  const result = await db.all('DELETE FROM users WHERE id = (?)',
+  id)
+  return res.json(result);
+});
+
+
+app.post("/users/edit", async (req,res)=> {
+  console.log(req.body);
+  const id = req.body.id
+  const name = req.body.firstname
+  const lastname = req.body.lastname
+  const country = req.body.country
+  const db = await database();
+  const result = await db.all('UPDATE users SET firstname = (?),lastname = (?), country= (?) WHERE id = (?)',
+  name,lastname,country,id)
+  return res.json(result);
+});
+
+
+
+
+
+
+
+
+
   
 
-  
-  
-  const db = await database();}
-  
-  
-  //db.serialize(()=>{
-    //db.run('INSERT INTO emp(id,name) VALUES(?,?)', [req.params.id, req.params.name], function(err) {
-      //if (err) {
-      //  return console.log(err.message);
-     // }
-     // console.log("New user has been added");
-     // res.send("New employee has been added into the database with ID = "+req.params.id+ " and Name = "+req.params.name);
-   // });
-//});
-//});
-
-
-//app.get('/users', function(req,res){
-//  db.serialize(()=>{
-//    db.run('UPDATE emp SET name = ? WHERE id = ?', [req.params.name,req.params.id], function(err){
-//      if(err){
-//        res.send("Error encountered while updating");
-//        return console.error(err.message);
-//      }
-//      res.send("Entry updated successfully");
-//      console.log("Entry updated successfully");
-//    });
-//  });
-//});
-
-
-//app.get('/users', function(req,res){
-//  db.serialize(()=>{
-//    db.run('DELETE FROM emp WHERE id = ?', req.params.id, function(err) {
-//      if (err) {
-//        res.send("Error encountered while deleting");
-//        return console.error(err.message);
-//      }
-//      res.send("Entry deleted");
-//      console.log("Entry deleted");
-//    });
-//  });
-//});
 
 
 
 
-)

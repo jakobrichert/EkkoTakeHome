@@ -14,9 +14,7 @@ import React from "react"
 function App() {
   const [users, setUsers] = useState([]);
 
-  // Note: the empty deps array [] means
-  // this useEffect will run once
-  // similar to componentDidMount()
+
   useEffect(() => {
     fetch("http://localhost:4000/users")
       .then(response => response.json())
@@ -28,11 +26,18 @@ function App() {
     return (
       <div className="app">
       {/* Form */}
-        <Form />
+        <Form 
+
+        setUsers = {setUsers}
+        
+        
+        
+        
+        />
 
         {/* Users */}
         {users.map((user) => (
-          <User user={user} />
+          <User user={user} setUsers={setUsers}  />
         ))}
       </div>
       );

@@ -19,7 +19,7 @@ function Form() {
   const handleChange = (event) => {
     
     const { name, value } = event.target;
-
+    
     setUser({
       ...user,
       [name]: value,
@@ -28,7 +28,7 @@ function Form() {
 
   
   const handleSubmit = (event) => {
-    event.preventDefault();
+    
     alert('form submitted!' +'\n first name: ' + user.firstname + '\n last name: '
     + user.lastname + '\n country: ' + user.country
     )
@@ -41,8 +41,10 @@ function Form() {
       .catch(error => console.error('Error: ', error))
     
       .then(response => console.log('Success:', response));
+
     
-  
+    
+      
     }
 
   return (
