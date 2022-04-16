@@ -48,7 +48,7 @@ app.post("/users", async (req,res)=> {
   return res.json(result);
 });
 
-app.delete("/users/delete", async (req,res)=> {
+app.delete("/users", async (req,res)=> {
   console.log(req.body);
   const id = req.body.id
   
@@ -59,7 +59,7 @@ app.delete("/users/delete", async (req,res)=> {
 });
 
 
-app.post("/users/edit", async (req,res)=> {
+app.put("/users", async (req,res)=> {
   console.log(req.body);
   const id = req.body.id
   const name = req.body.firstname

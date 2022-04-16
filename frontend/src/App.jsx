@@ -28,7 +28,7 @@ function App() {
       {/* Form */}
         <Form 
 
-        setUsers = {setUsers}
+        setUsers = {setUsers} 
         
         
         
@@ -37,7 +37,7 @@ function App() {
 
         {/* Users */}
         {users.map((user) => (
-          <User user={user} setUsers={setUsers}  />
+          <User user={user} setUsers={setUsers} users={users} />
         ))}
       </div>
       );

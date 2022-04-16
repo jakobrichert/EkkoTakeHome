@@ -8,7 +8,7 @@ const initialUser = {
   country: "",
   };
 
-function Form() {
+function Form({setUsers}) {
   
   
   
@@ -27,7 +27,7 @@ function Form() {
   };
 
   
-  const handleSubmit = (event) => {
+  const handleSubmit = () => {
     
     alert('form submitted!' +'\n first name: ' + user.firstname + '\n last name: '
     + user.lastname + '\n country: ' + user.country
@@ -38,11 +38,12 @@ function Form() {
       headers:{ 'Content-Type': 'application/json; charset=utf-8' },
       body: JSON.stringify(user)
     }).then((response) => response.json())
-      .catch(error => console.error('Error: ', error))
+      .then(result => setUsers(result))  
+    .catch(error => console.error('Error: ', error))
     
       .then(response => console.log('Success:', response));
 
-    
+      
     
       
     }
