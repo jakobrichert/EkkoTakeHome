@@ -1,5 +1,5 @@
 # Take Home Test
-This is the takehome test for Ekko App interview. It took me approximately 7 hours to finish the tasks and an additional hour to try and refactor a couple things after getting the functionality finished. (that was just to see if I could do it another way)
+This is the takehome test for Ekko App interview. It took me approximately 8 hours to finish the tasks and an additional hour to try and refactor a couple things after getting the functionality finished. (that was just to see if I could do it another way)
 
 
 
