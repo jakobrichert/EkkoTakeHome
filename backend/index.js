@@ -12,7 +12,7 @@ app.use(
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-
+//fix CORS errors and allow headers
 app.all('/users', function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", ['Origin', 'X-Requested-With', 'Content-Type', 'Accept'],);
@@ -23,7 +23,7 @@ app.all('/users', function(req, res, next) {
 app.get("/", async (req, res) => {
   return res.send("Hello world");
 });
-
+//gets the user list
 app.get("/users", async (req, res) => {
   
   res.set('Access-Control-Allow-Origin', '*');
@@ -36,7 +36,7 @@ app.listen(PORT, (err) => {
   if (err) console.log(err);
   console.log(`Backend started - listening on port ${PORT}`);
 });
-
+//post method to add the user using sql
 app.post("/users", async (req,res)=> {
   console.log(req.body);
   const name = req.body.firstname
@@ -47,7 +47,7 @@ app.post("/users", async (req,res)=> {
   [name,lastname,country]);
   return res.json(result);
 });
-
+// DELETE method to delete user using sql (references id)
 app.delete("/users", async (req,res)=> {
   console.log(req.body);
   const id = req.body.id
@@ -58,7 +58,7 @@ app.delete("/users", async (req,res)=> {
   return res.json(result);
 });
 
-
+// PUT method to update user using sql
 app.put("/users", async (req,res)=> {
   console.log(req.body);
   const id = req.body.id

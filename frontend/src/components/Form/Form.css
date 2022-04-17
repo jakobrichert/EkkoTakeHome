@@ -1,19 +1,46 @@
 .form {
+  display: block; margin: 0 auto;
+  height: 200%;
+  
+  background-color: white;
   padding: 0.5rem;
   border: 1px #ccc solid;
-  margin: 2rem 0;
+  
 }
 
-.form input,
-.form label,
+
+.form header {
+  color: rgb(15, 19, 73);
+  background-color: white;
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 40px;
+  font-family: Roboto-Regular;
+}
+
 .form button {
-  display: block;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  border-radius: 45px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+ 
+  
+  
+  
 }
 
 .form label {
+  color: rgb(15, 19, 73);
+  background-color: white;
   margin-bottom: 0.35rem;
 }
 .form input {
+  color: black;
+  background-color: white;
   margin-bottom: 1rem;
   width: 100%;
   padding: 0.35rem;

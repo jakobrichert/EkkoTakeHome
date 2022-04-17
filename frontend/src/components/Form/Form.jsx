@@ -12,10 +12,11 @@ function Form({setUsers}) {
   
   
   
-  
+  //Set the user state to empty strings 
   const [user, setUser] = useState(initialUser)
   
   
+  //normal handleChange function for form input
   const handleChange = (event) => {
     
     const { name, value } = event.target;
@@ -26,7 +27,9 @@ function Form({setUsers}) {
     });
   };
 
-  
+  //function to handle when the form is submitted
+  //fetch the user api and POST the new form data, then update the setUsers state
+  //the  user is added to the database and shows on the mainpage 
   const handleSubmit = () => {
     
     alert('form submitted!' +'\n first name: ' + user.firstname + '\n last name: '
@@ -49,16 +52,18 @@ function Form({setUsers}) {
     }
 
   return (
+    
     <form onSubmit ={handleSubmit} className="form">
+      <header >User Form</header>
       <label htmlFor="name">Firstname</label>
-      <input type="text" name="firstname" 
+      <input placeholder="Enter firstname here.." type="text" name="firstname" 
       value = {user.firstname}
       onChange={handleChange}
       
       />
 
       <label htmlFor="name">Lastname</label>
-      <input type="text" name="lastname" 
+      <input placeholder="Enter lastname here.." type="text" name="lastname" 
       value = {user.lastname}
       onChange={handleChange}
       
@@ -66,7 +71,7 @@ function Form({setUsers}) {
       />
 
       <label htmlFor="name">Country</label>
-      <input type="text" name="country" 
+      <input placeholder="Enter country here.." type="text" name="country" 
       value = {user.country}
       onChange={handleChange}
       />

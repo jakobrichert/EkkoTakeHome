@@ -1,13 +1,99 @@
 .user {
+ 
+  background-color: white;
   padding: 0.5rem;
-  border: 1px #ccc solid;
+  color:white;
   margin: 0.5rem 0;
 }
 
+.user header {
+  background-color: white;
+
+}
+
+.user center {
+  float: left;
+  width: 33%;
+  color: rgb(15, 19, 73);
+  background-color: white;
+  padding: 10px;
+
+
+}
 .user span.label {
+  background-color: white;
   font-weight: 444;
-  color: #000;
+  color: gray;
 }
 .user p {
-  color: #333;
+  background-color: white;
+  color:rgb(15, 19, 73);
 }
+
+.user wrapper{
+  background-color: white;
+  color:white;
+  float: left;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+
+#usercontainer {
+  background-color: white;
+
+
+}
+
+
+#container {
+  text-align: center;
+  background-color: white;
+}
+
+button {
+  display: inline-block;
+}
+
+.user button{
+    display: inline-block;
+    background-color: rgb(44, 145, 93);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+    font-size: 16px;
+    margin: 20px 10px;
+    
+    
+    
+    
+  }
+  .user button1 {
+    display: inline-block;
+    
+    background-color:rgb(161, 52, 52);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+    font-size: 16px;
+    margin: 4px 2px;
+          
+
+  
+  }
+
+ 
+
+  
